@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script text="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+
+        $(function(){
+
+            $('#header').load("header.html");
+
+            $("#footer").load("footer.html");
+
+        })
+
+    </script>
+</head>
+<body>
+    <h1>Location</h1>
+    <div class="kakao-map">
+        <div id="map" style="width:50%;height:350px;"></div>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b519985ed8f40e3377c1b0ac1c7a7e69"></script>
+    <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);    
+    </script>
+    </div>
+    <p>서울 구로구 경인로 557 신한은행 4층</p>
+    <div id="footer"></div>
+</body>
+</html>
