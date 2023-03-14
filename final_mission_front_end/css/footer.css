@@ -172,6 +172,12 @@ footer .quick-links {
   color: #73CFEC;
 }
 
+.shopping-cart{
+  width: 25%;
+  height: 60%;
+  color: white;
+}
+
 
 @media (min-width: 1601px) {
   .f-title{
