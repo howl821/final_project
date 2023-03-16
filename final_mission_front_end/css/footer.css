@@ -239,8 +239,63 @@ footer .quick-links {
 }
 
 @media (max-width: 767px) {
+  
+  footer{
+    
+    height: 805px;
+    width: 105%;
+    max-height: 805px !important;
+  }
+
   .f-logo{
     width: 50%;
+  }
+  
+  .header-search{
+    
+    margin: 0;
+  }
+
+  .header-cart{
+    
+    height: 100%;
+    line-height: 100%;
+    margin-top: 1.5% !important;
+    margin-bottom: 1.5%;
+    padding: 0;
+  }
+
+  .member-one{
+    
+    font-size: 15px;
+    margin-top: 10%;
+  }
+
+  .member-two{
+    font-size: 25px;
+  }
+
+  .form-control-header{
+    margin-top: 20% !important;
+    margin-bottom: 18% !important;
+    height: 30px;
+  }
+
+  span.search-item{
+    
+    height: 30px !important;
+    margin-top: 20% !important;
+
+  }
+
+  .search-button{
+    width: 20px;
+    margin-left: -10px !important;
+
+  }
+
+  .header-logo{
+    margin-top: 1%;
   }
 }
 

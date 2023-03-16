@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
+*{
+    margin: 0 auto;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.main-page{
+    background-color: rgba(115,207,236,0.3);
+    padding-bottom: 5%;
+}
+
+.new-item-title{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.best-item-title{
+    
+    margin-top: 5%;
+    padding-bottom: 3%;
+}
+
+.best-item{
+    margin-top: 10%;
+}
+
+.best{
+    text-align: center;
+}
+
+
+
+.main-banner{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+@media (min-width: 1601px){
+    .circle-image{
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1600px){
+    .circle-image {
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 767px){
+    .main-banner{
+        
+    height: 300px;
+    }
+
+    .circle-image{
+        width: 100%;
+    }
+}

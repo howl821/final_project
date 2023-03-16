@@ -5,6 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
+    <link rel="stylesheet" href="css/main_page.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script text="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+
+        $(function(){
+
+            $('#header').load("header.html");
+
+            $("#footer").load("footer.html");
+
+        })
+
+    </script>
+    
+    <div id="header"></div>
+        <div class="main-page">
+            <div class="main-banner">
+                <img src="/resource/main_bg.jpg" class="banner-img" alt="">
+            </div>
+            <div class="container">
+                <div class="main-item">
+                    <div class="new-item">
+                        <h3 class="new-item-title">신상품 구경하기</h3>
+                        <div class="card-group row-cols-1">
+                            <div class="card">
+                              <img src="resource/new_arrival.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">위카 제단 세트</h5>
+                                <p class="card-text">₩134,000</p>
+                                
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="resource/new_arrival2.PNG" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">기본 주술 도구 세트</h5>
+                                <p class="card-text">₩134,000</p>
+                               
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="resource/new_arrival3.PNG" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">위카 종합 제단 세트</h5>
+                                <p class="card-text">₩875,000</p>
+                              
+                              </div>
+                            </div>
+                            <div class="card">
+                                <img src="resource/new_arrival4.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">제단용 테이블</h5>
+                                  <p class="card-text">₩31,000</p>
+                            
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                    <div class="best-seller">
+                        <h3 class="best-item-title">인기 상품</h3>
+                        <div class="row">
+                            <div class="col best">
+                                <img src="resource/best1.PNG" class="rounded-circle circle-image" alt="...">
+                                <h3 class="best-item">서적</h3>
+                            </div>
+                            <div class="col best">
+                                <img src="resource/best2.PNG" class="rounded-circle circle-image" alt="...">
+                                <h3 class="best-item">솥단지</h3>
+                            </div>
+                            <div class="col best">
+                                <img src="resource/best3.PNG" class="rounded-circle circle-image" alt="...">
+                                <h3 class="best-item">단검</h3>
+                            </div>
+                            <div class="col best">
+                                <img src="resource/best4.PNG" class="rounded-circle circle-image" alt="...">
+                                <h3 class="best-item">캔들</h3>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="footer"></div>
 </head>
 <body>
     
