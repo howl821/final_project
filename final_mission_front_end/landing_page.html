@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //문서 전체(body 태그)에 플러그인 적용함
+            $('body').vegas({
+            slides: [
+                //초반이미지 나타나게 함. 주석처리하면 안 나타남
+                // {src: '/resource/main_bg.jpg'},
+                {
+                    //video{}안에 배경 동영상과 옵션값 지정함
+            video: {
+                //src 속성을 사용해 동영상 지정해 줌
+                src: [
+                    '/resource/lending_page.mp4'],
+                    //loop 속성을 사용해 동영상 반복 여부 지정함
+                loop: true,
+                //동영상을 무음상태로 만들어 줌
+                mute: true
+            }
+        }
+    ]
+    });
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+		<div class="jumbotron jumbotron-info">
+			<h1><strong>GKYK mall 회사 소개<br></strong>&nbsp;<span class="glyphicon glyphicon glyphicon-pencil"></span></h1>
+				<h2>"GKYK은 커머스의 미래를 만들어 가고 있습니다."<br><br>We are building the future of commerce!<br><br>GKYK은 고객 감동 실현을 위해 존재합니다. 고객들이 "GKYK 없이 그동안 어떻게 살았을까?" 라고 말할 때, 비로소 우리의 미션을 실현하고 있음을 알 수 있습니다. 고객들의 쇼핑과 식사, 생활 전반을 편하게 만들겠다는 유일한 집념으로 GKYK은 수억 달러 규모의 이커머스 산업 전반의 혁신을 이끌고 있습니다. GKYK은 가장 빠르게 성장하는 이커머스 기업 중 하나로, 국내 커머스 업계에서의 독보적인 입지와 고객 신뢰를 구축했습니다.</h2>
+		</div>
+	</div>
+</body>
+</html>
